@@ -4,18 +4,54 @@
         <title>Tanmay Sreejith</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.5"> 
         <style>
+          @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+            html{
+                overflow-x:auto;           
+            }
+            body{
+                background-image:rgb(31,18,87);
+                background-image:linear-gradient(90deg,rgba(31,18,87,0.9775619720544467) 10%, rgba(9,74,117,1) 49%, rgba(84,121,9,1) 81%, rgba(0,212,255,1) 100%);  
+            }
             .title {
-                font-family:timesnewroman;
+                font-family: 'Raleway', sans-serif;
                 font-size:200%;
                 font-weight:900px;
             }
+            .card {
+                margin-left:auto;
+                margin-right:auto;
+                text-align:center;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                width:750px;
+                height:800px;
+                border-radius:20px;
+                padding:50px;
+                padding-top:20px;   
+                background: #ffffff;  
+            }   
+
+            img {
+                vertical-align:center;
+                width:120px;
+                height:120px;
+                border-radius:50%;
+                border:3px solid chocolate;
+                padding:2px;
+            }
             .para {
-                font-family:timesnewroman;
+                font-family: 'Raleway', sans-serif;
                 white-space:nowrap;
+            }
+            table, td, th {
+                border: 1px solid black;
+                margin-left:auto;
+                margin-right:auto;
             }
             .line {
                 border-top-width:2px;
             }
+            
             input[type=text] {
                 border-radius:2px;
                 border-width:0.75px;
@@ -32,61 +68,68 @@
     </head>
 
     <body>
-        <h1 class="title">Tanmay Sreejith</h1>
-        <h3 class="para"> <b>Email</b> : <span style="font-weight:500"> iit2021004@iiita.ac.in </span>  | <b>Phone</b> :<span style="font-weight:500"> 6282166533 </span> | <b> My GitHub URL</b>:<a href="https://github.com/t-a-n-m-a-y">t-a-n-m-a-y</a> </h3>
+        <div class="card">
+            <h1 class="title">Tanmay Sreejith</h1>
+            <div class="container">
+                <img src ="D:\seb on car.jpg" alt = "Seb Vettel 2013">
+                <h3 class="para"> <b>Email</b> : <span style="font-weight:500"> iit2021004@iiita.ac.in </span>  | <b>Phone</b> :<span style="font-weight:500"> 6282166533 </span> | <b> My GitHub URL</b>:<a href="https://github.com/t-a-n-m-a-y">t-a-n-m-a-y</a> </h3>
+                    
+                <hr class="line">
+
+                <div class="para">
+                    <h2 style="font-size:150%">Education</h2>
+                    <ul>
+                        <li>I did my schooling in Bahrain till 12th grade.</li>
+                        <br>
+                        <li>As of Feb'22, I'm in my first year of B.Tech (IT) at Indian Institute of Information Technology (IIIT), Allahabad.</li>
+                    </ul>  
+                </div>   
+
+                <hr class="line">
+
+                <div class="para"> 
+                    <h2 style="font-size:150%">Skills</h2>
+                     <table>
+                        <tr> 
+                            <th> <b>Language</b> </th>
+                            <th> <b>Skill</b> </th>
+                        </tr>  
+                        <tr>
+                            <td> <b>HTML</b> </td>
+                            <td> &#9733 &#9733 &#9734 &#9734 &#9734</td>
+                         </tr> 
+                        <tr>
+                            <td> <b>CSS</b> </td>
+                            <td> &#9733 &#9733 &#9734 &#9734 &#9734</td>
+                        </tr>
+                        <tr>
+                            <td> <b>Javascript</b> </td>
+                            <td> &#9733 &#9733 &#9733 &#9733 &#9734</td>
+                        </tr>
+                    </table>
+                </div>
     
-        <hr class="line">
+                <hr class="line">
 
-        <div class="para">
-        <h2 style="font-size:150%">Education</h2>
-            <ul>
-                <li>I did my schooling in Bahrain till 12th grade.</li>
-                <br>
-                <li>As of Feb'22, I'm in my first year of B.Tech (IT) at Indian Institute of Information Technology (IIIT), Allahabad.</li>
-            </ul>  
-        </div>   
+                <div class="para"> 
+                <h2 style="font-size:150%">Contact Me</h2>
+                    <form>
+                        <label for="yname">Your Name : </label>
+                        <input type="text" id="yname" name="yname" placeholder="Enter your name"> 
 
-        <hr class="line">
+                <hr style="border:none">
 
-        <div class="para"> 
-            <h2 style="font-size:150%">Skills</h2>
-            <table>
-                <tr> 
-                    <th> <b>Language</b> </th>
-                    <th> <b>Skill</b> </th>
-                </tr>  
-                <tr>
-                    <td> <b>HTML</b> </td>
-                    <td> &#9733 &#9733 &#9733 &#9733 &#9734</td>
-                </tr> 
-                <tr>
-                    <td> <b>CSS</b> </td>
-                    <td> &#9733 &#9733 &#9733 &#9734 &#9734</td>
-                </tr>
-                <tr>
-                    <td> <b>Javascript</b> </td>
-                    <td> &#9733 &#9733 &#9734 &#9734 &#9734</td>
-                </tr>
-            </table>
+                        <label for="yemail">Your Email id :</label>
+                        <input type="email" id="yname" name="yemail" placeholder="Enter your email id"> 
+
+                <hr style="border:none">
+
+                        <label for="ymessage">Your Message</label>
+                        <textarea id="ymessage" name="ymessage" placeholder="Enter your message" rows="3" cols="35" wrap="hard"></textarea>
+                    </form>
+                </div>
+
+            </div>
         </div>
-    
-        <hr class="line">
-
-        <div class="para"> 
-            <h2 style="font-size:150%">Contact Me</h2>
-            <form>
-                <label for="yname">Your Name : </label>
-                <input type="text" id="yname" name="yname" placeholder="Enter your name"> 
-
-                <hr style="border:none">
-
-                <label for="yemail">Your Email id :</label>
-                <input type="email" id="yname" name="yemail" placeholder="Enter your email id"> 
-
-                <hr style="border:none">
-
-                <label for="ymessage">Your Message</label>
-                <textarea id="ymessage" name="ymessage" placeholder="Enter your message" rows="3" cols="35" wrap="hard"></textarea>
-            </form>
  
     </body>
